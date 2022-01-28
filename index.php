@@ -1,7 +1,8 @@
 <?php
 
-$hello = 'Hello word';
-
+$hello = 'Hello world is my best place in the universe of Hearth word word word';
+$userWord = $_GET['word'];
+$sostituzione = '***'
 
 ?>
 
@@ -14,6 +15,8 @@ $hello = 'Hello word';
     <title>Document</title>
 </head>
 <body>
-    <h1><?php echo $hello ?></h1>
+    <h1><?php echo $hello ?> </h1>
+    <span><?php echo strlen($hello) ?> </span>
+    <span><?php echo str_replace($userWord, $sostituzione, $hello) ?></span>
 </body>
 </html>
